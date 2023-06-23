@@ -1,0 +1,18 @@
+[package]
+name = "discurse"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "src/server/server.rs"
+
+[dependencies]
+anyhow = "1.0.66"
+audiopus = "0.2.0"
+borsh = "0.9.3"
+cpal = "0.14.1"
+ctrlc = "3.2.3"
+fast_log = "1.5.42"
+log = "0.4.17"
+uuid = { version = "1.2.1", features = ["v4", "zerocopy", "serde"] }
